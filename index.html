@@ -12,23 +12,25 @@
 	<body>
 		<div id="root"></div>
 		<script type="text/babel">
+			
+
 			const person = {
 				firstName: "Lilla",
 				lastName: "Németh"
 			}
 
-			// const element = (
-			// 	<h3>Hello, {person.firstName} {person.lastName}!</h3>
-			// 	);
-
+			const element = (
+				<h3>Hello, {person.firstName} {person.lastName}!</h3>
+				);
+			/*
 			function Greeting(props) {
 				return (
 					<h3>{props.text}, {person.firstName} {person.lastName}!</h3>
 				);
-			}
+			} */
 
 			ReactDOM.render(
-				<Greeting text="Good night"/>, 
+				element, 
 				document.getElementById("root")
 			);
 		</script>
